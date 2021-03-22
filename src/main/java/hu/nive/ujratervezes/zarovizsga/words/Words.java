@@ -20,7 +20,9 @@ public class Words {
             if(!Character.isDigit(c)){
                 nonNumbers.add(c);
             }
-            return numbers.size() > nonNumbers.size();
+            if (numbers.size() > nonNumbers.size()){
+                return true;
+            }
         }
         return false;
     }
